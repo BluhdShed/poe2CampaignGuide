@@ -1,0 +1,20 @@
+{
+  walkthrough [
+    {
+      id act_ID,            e.g., act_1, interlude_2
+      name Act Name,        e.g., Act 1, Interlude 1
+      locations [
+        {
+          name Zone Name,   e.g., Riverbank, Clearfell
+          steps [
+            {
+              type type,         e.g., kill, npc, door, loot
+              is_optional true,    true or false
+              instruction Text   The actual guide text
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

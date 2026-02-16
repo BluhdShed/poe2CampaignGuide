@@ -1,0 +1,184 @@
+:root {
+            --bg-color: #000000;
+            --card-bg: #1a1a20;
+            --text-main: #e0e0e0;
+            --accent: #c4a000;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+        h1 { text-align: center; 
+            color: var(--accent); 
+            text-transform: uppercase; 
+        }
+
+        .act-section {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .location-group { 
+            margin-bottom: 20px; 
+            border-left: 2px solid var(--accent); 
+            padding-left: 15px; 
+        }
+
+        .location-name { color: var(--accent); 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            margin-bottom: 10px; 
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            background: #25252d;
+            margin-bottom: 5px;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .step.optional { 
+            opacity: 0.7; 
+            border-left: 3px solid #666; 
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+
+        .instruction { flex-grow: 1; }
+
+        .tag-optional {
+            font-size: 0.7rem;
+            background: #444;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Style for the step when it is completed */
+        .step.completed {
+            opacity: 0.3; /* Makes it darker/dimmed */
+            filter: grayscale(100%);
+        }
+
+        .step.completed .instruction {
+            text-decoration: line-through;
+        }
+
+        .checkbox-container {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Make checkboxes slightly larger for easier clicking while gaming */
+        input[type="checkbox"] {
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .controls {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        #reset-btn {
+            background: #333;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        #reset-btn:hover {
+            background: var(--accent);
+            color: #000000;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background: #25252d;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        /* Smooth scrolling for the whole page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add some top padding to acts so the jump doesn't hit the very top edge */
+        .act-section {
+            scroll-margin-top: 20px;
+        }
+
+        .act-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .act-header::after {
+            content: '▼';
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+
+        /* Rotate arrow when collapsed */
+        .act-section.collapsed .act-header::after {
+            transform: rotate(-90deg);
+        }
+
+        /* Hide content when collapsed */
+        .act-section.collapsed .act-content {
+            display: none;
+        }
+
+        .act-section {
+            transition: all 0.3s ease;
+        }
