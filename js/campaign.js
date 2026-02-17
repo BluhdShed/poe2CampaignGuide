@@ -1604,7 +1604,7 @@ const campaignData = {
             {
               "type": "npc",
               "is_optional": false,
-              "instruction": "Teleport at the beginning and talk to Freya Hartlin"
+              "instruction": "Checkpoint to the beginning of map and talk to Freya Hartlin"
             },
             {
               "type": "tp",
@@ -2326,3 +2326,4 @@ const campaignData = {
   ]
 
 }
+
