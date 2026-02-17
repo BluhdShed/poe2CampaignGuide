@@ -1562,11 +1562,6 @@ const campaignData = {
               "instruction": "Kill Krutog, Lord of Kin"
             },
             {
-              "type": "npc",
-              "is_optional": false,
-              "instruction": "Click on the cage to talk to Matiki"
-            },
-            {
               "type": "tp",
               "is_optional": false,
               "instruction": "Teleport back to town"
@@ -2329,4 +2324,5 @@ const campaignData = {
       ]
     }
   ]
+
 }
