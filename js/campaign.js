@@ -755,6 +755,11 @@ const campaignData = {
           "name": "The Titan Grotto",
           "steps": [
             {
+              "type": "loot",
+              "is_optional": true,
+              "instruction": "Click the Titan's Sword, to loot a lesser iron rune"
+            },
+            {
               "type": "kill",
               "is_optional": false,
               "instruction": "Kill Zalmarath and loot The Flame Ruby"
