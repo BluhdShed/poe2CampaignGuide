@@ -986,11 +986,6 @@ const campaignData = {
               "instruction": "Enter Chimera Wetlands, take waypoint and go back"
             },
             {
-              "type": "door",
-              "is_optional": false,
-              "instruction": "Enter Azak Bog, take waypoint and go back"
-            },
-            {
               "type": "tp",
               "is_optional": false,
               "instruction": "Teleport to Venom Crypts"
@@ -1126,6 +1121,46 @@ const campaignData = {
               "instruction": "Go to the hut and kill the rare for random loot"
             },
             {
+              "type": "door",
+              "is_optional": false,
+              "instruction": "Enter to Azak Bog"
+            },
+            {
+              "type": "tp",
+              "is_optional": false,
+              "instruction": "Teleport back to town"
+            }
+          ]
+        },
+        {
+          "name": "Azak Bog",
+          "steps": [
+            {
+              "type": "npc",
+              "is_optional": false,
+              "instruction": "Summon and talk to Servi"
+            },
+            {
+              "type": "use",
+              "is_optional": true,
+              "instruction": "Activate Flameskin rituals you encounter for fire resistance and rarity for the rest of the zone"
+            },
+            {
+              "type": "kill",
+              "is_optional": false,
+              "instruction": "Kill Ignagduk, loot the Spear and use his Gemrot Skull for +30 spirit"
+            },
+            {
+              "type": "door",
+              "is_optional": false,
+              "instruction": "Enter The Matlan Waterways"
+            }
+          ]
+        },
+        {
+          "name": "The Matlan Waterways",
+          "steps": [
+            {
               "type": "use",
               "is_optional": false,
               "instruction": "Use the big Canal Lever at the end of the zone"
@@ -1164,36 +1199,6 @@ const campaignData = {
               "type": "door",
               "is_optional": false,
               "instruction": "Find The Molten Vault, take the waypoint and go back"
-            },
-            {
-              "type": "tp",
-              "is_optional": false,
-              "instruction": "Teleport to Azak Bog"
-            }
-          ]
-        },
-        {
-          "name": "Azak Bog",
-          "steps": [
-            {
-              "type": "npc",
-              "is_optional": false,
-              "instruction": "Summon and talk to Servi"
-            },
-            {
-              "type": "use",
-              "is_optional": true,
-              "instruction": "Activate Flameskin rituals you encounter for fire resistance and rarity for the rest of the zone"
-            },
-            {
-              "type": "kill",
-              "is_optional": false,
-              "instruction": "Kill Ignagduk, loot the Spear and use his Gemrot Skull for +30 spirit"
-            },
-            {
-              "type": "tp",
-              "is_optional": false,
-              "instruction": "Teleport to The Molten Vault if it's your first character or to town otherwise"
             }
           ]
         },
