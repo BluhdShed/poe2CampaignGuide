@@ -1093,12 +1093,12 @@ const campaignData = {
             {
               "type": "tp",
               "is_optional": false,
-              "instruction": "Teleport to Infested Barrens"
+              "instruction": "Teleport to Jungle Runis"
             }
           ]
         },
         {
-          "name": "Infested Barrens",
+          "name": "Jungle Runis",
           "steps": [
             {
               "type": "use",
